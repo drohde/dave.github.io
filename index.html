@@ -1,9 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rohde - Researcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .sidebar-right {
+            background-color: #e8e8e8;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar ul li a:hover {
+            color: #007BFF;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .sidebar-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>David Rohde</h1>
+        <p>Researcher in Machine Learning and Statistics</p>
+    </header>
+
+    <div class="container">
+        <!-- Left Sidebar: Navigation -->
+        <nav class="sidebar">
+            <h3>Research Areas</h3>
+            <ul>
+                <li><a href="#bayesian-inference">Bayesian Inference</a></li>
+                <li><a href="#causality">Causality</a></li>
+                <li><a href="#recommender-systems">Recommender Systems</a></li>
+            </ul>
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="#talks">Talks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h2>About Me</h2>
+            <p>Welcome to my research website. I am David Rohde, a researcher specializing in Bayesian inference, causality, and recommender systems. My work focuses on developing robust statistical methods and machine learning algorithms to solve real-world problems.</p>
+
+            <h2>Research Interests</h2>
+            <section id="bayesian-inference">
+                <h3>Bayesian Inference</h3>
+                <p>Exploring probabilistic models and computational methods for uncertainty quantification and decision-making.</p>
+                <ul>
+                    <li><a href="#papers">View Papers</a></li>
+                    <li><a href="#talks">View Talks</a></li>
+                </ul>
+            </section>
+
+            <section id="causality">
+                <h3>Causality</h3>
+                <p>Investigating causal inference techniques to understand cause-and-effect relationships in observational data studies.</p>
+                <ul>
+                    <li><a href="#papers">View Papers</a></li>
+                    <li><a href="#talks">View Talks</a></li>
+                </ul>
+            </section>
+
+            <section id="recommender-systems">
+                <h3>Recommender Systems</h3>
+                <p>Designing personalized recommendation algorithms using collaborative filtering and Bayesian approaches.</p>
+                <ul>
+                    <li><a href="#papers">View Papers</a></li>
+                    <li><a href="#talks">View Talks</a></li>
+                </ul>
+            </section>
+
+            <section id="papers">
+                <h2>Papers</h2>
+                <ul>
+                    <li><a href="#">"Bayesian Models for Recommender Systems" (2023)</a></li>
+                    <li><a href="#">"Causal Inference with Observational Data" (2022)</a></li>
+                    <li><a href="#">"Advances in Bayesian Inference" (2021)</a></li>
+                </ul>
+            </section>
+
+            <section id="talks">
+                <h2>Talks</h2>
+                <ul>
+                    <li><a href="#">"Bayesian Methods in Machine Learning" - ML Conference 2024</a></li>
+                    <li><a href="#">"Causality in Practice" - Statistics Symposium 2023</a></li>
+                    <li><a href="#">"Recommender Systems Tutorial" - Data Science Meetup 2022</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Right Sidebar: Additional Links -->
+        <aside class="sidebar sidebar-right">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="mailto:david.rohde@example.com">Email</a></li>
+                <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+                <li><a href="https://github.com/davidrohde" target="_blank">GitHub</a></li>
+                <li><a href="https://x.com/davidrohde" target="_blank">X Profile</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
 </html>
